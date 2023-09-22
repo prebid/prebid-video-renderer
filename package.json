@@ -1,0 +1,23 @@
+{
+  "name": "prebid-video-renderer",
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/prebid-video-renderer.umd.cjs",
+  "module": "./dist/prebid-video-renderer.js",
+  "exports": {
+    ".": {
+      "import": "./dist/prebid-video-renderer.js",
+      "require": "./dist/prebid-video-renderer.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite build --watch & vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
